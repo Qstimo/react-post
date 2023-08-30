@@ -1,0 +1,61 @@
+.root {
+    background-color: hwb(91 0% 0% / 0.111);
+    margin-bottom: 20px;
+    padding: 25px;
+    // text-align: center;
+    width: 400px;
+    border: 1px solid hwb(205 0% 0% / 0.111);
+    border-radius: 10px;
+
+    &:hover {
+        background-color: hwb(91 0% 0% / 0.2);
+
+        .clear {
+            display: block;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:active svg {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    position: relative;
+
+}
+
+.clear {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

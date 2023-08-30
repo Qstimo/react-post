@@ -1,0 +1,28 @@
+    .root {
+        padding: 15px 10px 15px 10px;
+        border: 1px solid hwb(91 0% 0% / 0.111);
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+
+        &:focus {
+            outline: 1px solid hwb(91 0% 0% / 0.5);
+        }
+
+        &:hover {
+            background-color: hwb(91 0% 0% / 0.2);
+        }
+
+        &:active {
+            transform: scale(97%);
+        }
+
+        .option {
+
+            cursor: pointer;
+
+
+
+        }
+    }
