@@ -6,7 +6,8 @@
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    min-width: 30px;
+    max-width: 100%;
 
 
     &:hover {

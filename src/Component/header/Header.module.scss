@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.navigate {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+
+
+    .link {
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 10px;
+        border-radius: 25px;
+        background-color: rgba(128, 128, 128, 0.07);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.17);
+            transform: scale(1.01);
+        }
+    }
+
+
+}

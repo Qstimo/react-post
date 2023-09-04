@@ -1,7 +1,11 @@
 import React from 'react';
 import s from './CommentStyle.module.scss';
+import MyButton from '../Ui/MyButton';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Comment({ title, number, body, id, name, email, removeComments }) {
+  const navigate = useNavigate();
+
   return (
     <div className={s.root}>
       <button onClick={() => removeComments(id)} className={s.clear}>
@@ -38,8 +42,9 @@ function Comment({ title, number, body, id, name, email, removeComments }) {
           </g>
         </svg>
       </button>
+      <MyButton onClick={() => navigate(`/comments/${id}`)}>Открыть</MyButton>
       <div className={s.title}>
-        <span>{number + 1}</span>
+        <span>{id}</span>
         <div className={s.name}>
           <h3>{email}</h3>
         </div>

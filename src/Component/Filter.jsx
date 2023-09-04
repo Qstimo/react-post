@@ -4,8 +4,7 @@ import MySelect from './Ui/select/MySelect';
 
 function Filter({ filter, setFilter }) {
   return (
-    <div>
-      {' '}
+    <div style={{ display: 'flex', gap: '15px' }}>
       <div className="" style={{ marginBottom: '15px' }}>
         <MySelect
           value={filter.sort}
@@ -18,11 +17,10 @@ function Filter({ filter, setFilter }) {
         />
       </div>
       <MyInput
-        style={{ position: 'relative', right: '10px' }}
+        style={{ position: 'relative' }}
         value={filter.search}
         onChange={(e) => setFilter({ ...filter, search: e.target.value })}
         placeholder="Поиск по комментариям"></MyInput>
-      <hr />
     </div>
   );
 }
